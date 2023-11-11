@@ -3,26 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samircom - Welcome to our Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Samircom</title>
+    <style>
+      html * {
+        font-size: 16px;
+        line-height: 1.625;
+        color: #2020131;
+        font-family: "Lucida Console", monospace;
+      }
+      a:link {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <!-- Header content goes here -->
-    </header>
+  <body class="p-8 flex flex-col space-y-3">
+    <!-- Intro -->
+    <div>
+      <h1 class="font-bold text-4xl">samir chowdhury</h1>
+      <h2 class="text-xl">software engineer, seattle, wa</h2>
+    </div>
+    <p>
+      welcome to my website, i'm a full-time software engineer @ amazon last
+      mile working in connected vehicles building out tech in amazon delivery
+      trucks. i like building cool things and solving hard problems.
+    </p>
+    <p>
+      <a target="_blank" href="mailto:samirchowd@gmail.com">Reach out to me</a>
+      if you have a cool problem to solve. check out <a
+        target="_blank"
+        href="https://github.com/samirchowd">my github</a
+      > if you want to see what im working on.
+    </p>
 
-    <nav>
-      <!-- Navigation menu goes here -->
-    </nav>
+    <p>
+      you can download my resume <a
+        target="_blank"
+        href="https://drive.google.com/file/d/1kMvmgh9Kg87gW3Z2sBOFP-ZHd2CaNbfB/view?usp=sharing"
+        >here</a
+      >
+    </p>
 
-    <main>
-      <!-- Main content goes here -->
-    </main>
+    <hr />
 
-    <footer>
-      <!-- Footer content goes here -->
-    </footer>
+    <!-- Experience -->
+    <h1 class="font-bold text-4xl">experience</h1>
+    <div>
+      <div class="flex items-center justify-between">
+        <h1 class="font-bold text-2xl">amazon</h1>
+        <h2 class="text-xl">seattle, wa</h2>
+      </div>
+      <div class="flex items-center justify-between">
+        <h2>software engineer intern</h2>
+        <h2>may 2023 - aug 2022</h2>
+      </div>
+      <ul class="list-disc list-inside">
+        <li>
+          led front-end development of a web application for station managers,
+          utilized in 100+ amazon delivery stations.
+        </li>
+        <li>
+          developed several scalable microservices using react, java spring, and
+          aws technologies (asg, fargate, cloudformation) to ensure efficient
+          operation across 4 global regions
+        </li>
+        <li>
+          made significant contributions to system design of multiple
+          large-scale projects with $50M+ entitlements.
+        </li>
+        <li>
+          took complete ownership of projects from initial design to
+          implementation, deployment, and scaling.
+        </li>
+      </ul>
+    </div>
 
-    <script src="script.js"></script>
+    <div>
+      <div class="flex items-center justify-between">
+        <h1 class="font-bold text-2xl">j.p. morgan chase</h1>
+        <h2 class="text-xl">newark, de</h2>
+      </div>
+      <div class="flex items-center justify-between">
+        <h2>software engineer intern</h2>
+        <h2>may 2022 - aug 2022</h2>
+      </div>
+
+      <ul class="list-disc list-inside">
+        <li>
+          developed a real-time web application for searching test results,
+          resulting in a 20% increase in engineer productivity.
+        </li>
+        <li>
+          led the development of flask rest apis for efficient insertion and
+          search operations across a dataset of 600k+ records in elasticsearch.
+        </li>
+        <li>
+          designed the software architecture, including data modeling, api
+          specification, and frontend wireframes.
+        </li>
+        <li>
+          leveraged terraform and aws services (elasticsearch, asg, ec2) to
+          successfully deploy the project into the cloud.
+        </li>
+        <li>
+          implemented comprehensive unit testing using pytest, achieving over
+          80% test coverage.
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- Technical Skills -->
+    <div class="flex flex-col space-y-2">
+      <h1 class="font-bold text-4xl">technical skills</h1>
+      <div class="flex items-center justify-between">
+        <h2 class="font-bold text-xl">languages</h2>
+        <p>python, javascript, java, c, sql, html/css</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <h2 class="font-bold text-xl">tools</h2>
+        <p>
+          react, spring, aws, terraform, elasticsearch, flask, numpy, pandas,
+          git/github
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Personal Projects -->
+    <!-- TODO: Get some personal projects bro LMAO -->
+
+    <!-- Education  -->
+    <h1 class="font-bold text-4xl">education</h1>
+    <!-- Uni Name & Degree -->
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <h2 class="font-bold text-xl">Emory University</h2>
+        <p>&mdash; Atlanta, GA</p>
+      </div>
+      <p>B.A. in Computer Science, Minor in Data Science</p>
+    </div>
+
+    <!-- GPA & Activities  -->
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-1">
+        <h2 class="font-bold">GPA</h2>
+        <p>: 3.50</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-1">
+          <h2 class="font-bold">Clubs</h2>
+          <p>
+            : Emory Competitive Programming (2x National Qual.), Bengali Student
+            Assoc.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog -->
+    </div>
   </body>
 </html>
